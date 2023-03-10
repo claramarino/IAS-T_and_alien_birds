@@ -26,7 +26,7 @@ ei_no_dd <- readRDS("Output/01_PCoA_traits_groups") %>%
 tg <- ei_no_dd %>% select(binomial, group2, Hand.Wing.Index:Habitat)
 
 # load trait data
-all_birds <- readRDS("Data/00_Traits_worldwide_birds") %>%
+all_birds <- readRDS("Data/00_Traits_worldwide_birds.rds") %>%
   mutate_if(is.character, as.factor) %>%
   # convert Mass, Beak & Clutch with log 
   mutate(ln.Mass = log(Mass),

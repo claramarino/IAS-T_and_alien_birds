@@ -7,7 +7,7 @@ library(Hmisc)
 
 #### Load data ####
 
-traits <- readRDS("Data/00_Traits_alien_iast_birds")
+traits <- readRDS("Data/00_Traits_alien_iast_birds.rds")
 
 
 #### Clean trait data ####
