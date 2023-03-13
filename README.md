@@ -19,17 +19,17 @@ Column description:
 - group (factor): species is alien ("EICAT") or IAS-threatened ("IAS-T")
 - group2 (factor): species is alien with high impact ("EICAT_imp"), alien with low impact ("EICAT_no_imp"), alien with no information on impact ("EICAT_DD"), IAS-threatened with high impact ("IAS-T_imp") or IAS-threatened with low impact ("IAS-T_no_imp")
 - Species1 (factor): binomial name of species as in AVONET
-- Hand.Wing.Index (numeric): Hand-wing index
-- Tail.Length (numeric): length of the tail
+- Hand.Wing.Index (numeric): Hand-wing index (ratio, no unit)
+- Tail.Length (numeric): length of the tail (mm)
 - hab_sum (numeric): number of different habitats used
 - insular_endemic (binary): species is insular endemic (1) or not (0)
 - volant (binary): species has the ability to fly (1) or not(0)
 - Trophic.Level (factor): trophic level
 - Primary.Lifestyle (factor): preferential foraging niche
-- ln.Mass (numeric): log-transformed body mass
-- ln.Clutch (numeric): log-transformed clutch size
-- ln.Beak.Depth (numeric): log-transformed beak depth 
-- ln.Beak.Length_Nares (numeric): log-transformed beak length
+- ln.Mass (numeric): log-transformed body mass (gram)
+- ln.Clutch (numeric): log-transformed clutch size (number of eggs)
+- ln.Beak.Depth (numeric): log-transformed beak depth (mm)
+- ln.Beak.Length_Nares (numeric): log-transformed beak length (mm)
 - bioreg (factor): bioregion of origin 
 - insul_level (numeric): species is mainland endemic (1), present on mainland and islands (2), insular endemic (3)
 
@@ -41,13 +41,13 @@ Lines refer to species.
 
 Column description:
 - binomial (character): binomial name of species as in IUCN Red List
-- Beak.Depth (numeric): beak depth 
-- Hand.Wing.Index (numeric): Hand-wing index
-- Tail.Length (numeric): length of the tail
-- Mass (numeric): body mass
+- Beak.Depth (numeric): beak depth (mm)
+- Hand.Wing.Index (numeric): Hand-wing index (ratio, no unit)
+- Tail.Length (numeric): length of the tail (mm)
+- Mass (numeric): body mass (gram)
 - hab_sum (numeric): number of different habitats used
-- Clutch (numeric): clutch size
-- Beak.Length_Nares (numeric): beak length
+- Clutch (numeric): clutch size (number of eggs)
+- Beak.Length_Nares (numeric): beak length (mm)
 - Trophic.Level (character): trophic level
 - Primary.Lifestyle (character): preferential foraging niche
 - bioreg (factor): bioregion of origin 
